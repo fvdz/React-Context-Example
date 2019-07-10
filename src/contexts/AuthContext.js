@@ -9,11 +9,6 @@ class AuthContextProvider extends Component {
 		userName: null
 	};
 	authenticate = e => {
-		// commented out because this does not have any function if your not
-		// use any kind of form validation. When there is really something to
-		// validate through username / password then the prevent behaviour has
-		// is neccesary to validate the values before submitting the form.
-		//e.preventDefault();
 		this.setState({
 			isAuthenticated: !this.state.isAuthenticated,
 			userName: !this.state.isAuthenticated ? 'Frans' : null
